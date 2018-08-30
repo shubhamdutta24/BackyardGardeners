@@ -1,16 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    background: #b5ca8d;
     text-decoration: none;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
+}
+figure div p {
+    background: transparent;
 }
 a {
     text-decoration: none;
     color: black;
 }
 header {  
-    position: fixed;
+    margin-top: 50px;
+    position: sticky;
+    top: 0;
     z-index: 10000;
     width: 100%;
     min-width: 320px;
@@ -79,7 +85,6 @@ header nav {
     color: aqua;
 }
 .slider{
-    padding-top: 60px;
     overflow: hidden;
     background: #0e300a;
 }
@@ -152,10 +157,10 @@ header nav {
 
 }
 
-.gardening .hero {
+/*.gardening .hero {
     background-image: url(../img/welcome1.jpg) no-repeat;
     background-size: cover;
-}
+}*/
 
 footer {
     background: #b5ca8d;
@@ -199,11 +204,15 @@ footer ul {
 
 .garart .article {
     flex: 1 1 33.33%;
-    border:3px solid red;
+    outline: 3px solid #a5b881;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.garart .article>*{
+    border: 3px solid blue;
 }
 
 .face a img {
