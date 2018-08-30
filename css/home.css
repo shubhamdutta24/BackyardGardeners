@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background: #b5ca8d;
     text-decoration: none;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
 }
 body {
     min-width: 320px;
+    background: #c9d8ac;
 }
 figure div p {
     background: transparent;
@@ -16,8 +16,7 @@ a {
     text-decoration: none;
     color: black;
 }
-header {  
-    margin-top: 50px;
+header {
     position: sticky;
     top: 0;
     z-index: 10000;
@@ -260,4 +259,9 @@ footer ul {
         flex-wrap: nowrap;
     }
 }
+@media all and (max-width: 716px){
+    footer>ul {
+        display: flex;
+    }
 
+}
