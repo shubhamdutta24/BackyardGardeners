@@ -157,11 +157,6 @@ header nav {
 
 }
 
-/*.gardening .hero {
-    background-image: url(../img/welcome1.jpg) no-repeat;
-    background-size: cover;
-}*/
-
 footer {
     background: #b5ca8d;
     color: #10110d;
@@ -199,26 +194,26 @@ footer ul {
 
 .garart {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .garart .article {
     flex: 1 1 33.33%;
-    outline: 3px solid #a5b881;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.garart .article>*{
-    border: 3px solid blue;
-}
-
 .face a img {
-    width: 80%;
+    width: 160px;
+    height: 160px;
 }
 
+.article {
+    margin: 20px 20px 20px 20px;
+}
 
 
 @media all and (min-width: 450px){
@@ -245,8 +240,25 @@ footer ul {
     .navbar a {
         color: #666d3f;
     }
+    .garart {
+        flex-direction: row;
+    }
+    .garart .article {
+        padding: 20
+    }
 
 }
+
+@media all and (min-width: 620px){
+    .garart {
+        flex-wrap: wrap;
+    }
+    .article {
+        max-width: 320px;
+    }
+}
+
+
 /* after clicking menu
 .navbar {
     display: flex;
